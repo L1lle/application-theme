@@ -1,0 +1,48 @@
+@import '~bootstrap/scss/navbar';
+
+.nav-link {
+    font-size: 0.8rem;
+}
+
+.navbar-light {
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.03);
+    z-index: 110;
+}
+
+.navbar {
+
+    .dropdown-menu-replace {
+        top: -1rem;
+        border-radius: 0;
+        box-shadow: 0 1px 5px rgba(0, 0, 0, 0.03);
+    }
+
+    .form-control {
+        font-size: 0.8rem;
+    }
+}
+
+@include media-breakpoint-up(lg) {
+    .navbar-expand-lg {
+        .navbar-nav {
+            .nav-link {
+                font-size: 0.80rem;
+                padding-left: ($nav-link-padding-x / 2);
+                padding-right: ($nav-link-padding-x / 2);
+
+                &.btn {
+                    margin-left: ($nav-link-padding-x / 4);
+                    margin-right: ($nav-link-padding-x / 4);
+                }
+            }
+
+            .nav-item-lg {
+                .nav-link {
+                    font-size: $navbar-brand-font-size;
+                    padding-top: 0.05rem;
+                    padding-bottom: 0.0rem;
+                }
+            }
+        }
+    }
+}

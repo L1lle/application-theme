@@ -1,0 +1,17 @@
+@import '~bootstrap/scss/card';
+
+a.card {
+    .card-title,
+    .card-text {
+        color: $body-color;
+    }
+
+    &:visited {
+    }
+    &:hover,
+    &:focus {
+        text-decoration: none;
+    }
+    &:active {
+    }
+}

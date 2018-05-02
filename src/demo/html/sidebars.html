@@ -1,0 +1,21 @@
+${require('./_head.html')} ${require('./_navbar.html')}
+<div class="m-aside container-fluid">
+    <h1>Sidebars</h1>
+    <h2>Navbar Aside</h2>
+    <p>
+        <a href="#" class="btn btn-primary" data-toggle="aside" data-target="navbar-aside-left">Toggle aside left</a>
+        <a href="#" class="btn btn-primary" data-toggle="aside" data-target="navbar-aside-right">Toggle aside right</a>
+    </p>
+</div>
+<div class="bg-white border border-top-0 border-bottom-0 border-right-0 navbar-aside navbar-aside-right app-height">
+    <div class="navbar-aside-body p-3">
+        <h2>Sidebar right</h2>
+    </div>
+</div>
+<div class="navbar-aside navbar-aside-right bg-info d-none app-height">
+    <button type="button" class="close" aria-label="Close" data-toggle="aside" data-target="navbar-aside-right">
+        <span aria-hidden="true">&times;</span>
+    </button>
+    Navbar Aside right
+</div>
+${require('./_footer.html')}

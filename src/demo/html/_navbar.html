@@ -1,0 +1,67 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-white border border-top-0 border-left-0 border-right-0 sticky-top">
+    <a href="index.html" class="navbar-brand">
+    <img  width="30" height="30" class="d-inline-block align-top" alt=""> Home
+  </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav">
+            <li class="nav-item nav-item-lg dropdown">
+                <a class="nav-link dropdown-toggle" href="/" id="navbarBrandDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Components
+                </a>
+                <div class="dropdown-menu dropdown-menu-replace dropdown-menu-lg" aria-labelledby="navbarBrandDropdownMenuLink">
+                    <a class="dropdown-item" href="elements.html">Elements</a>
+                    <a class="dropdown-item" href="sidebars.html">Sidebars</a>
+                </div>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item nav-item-lg">
+                <a class="nav-link" href="#">Large link</a>
+            </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
+            <button class="nav-link btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+        </form>
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+                <a class="nav-link disabled" href="#">Disabled</a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="http://example.com" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Dropdown link
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                    <a class="dropdown-item" href="#">Action</a>
+                    <a class="dropdown-item" href="#">Another action</a>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                </div>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link btn btn-primary" href="#">Button</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+<div class="navbar-aside navbar-aside-left bg-light border border-top-0 border-left-0 border-bottom-0 app-height">
+    <div class="navbar-aside-body">
+        <div class="bg-white p-3 border border-top-0 border-right-0 border-left-0">
+            <h5 class="card-title">Components</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        </div>
+        <div class="list-group mt-3 bg-white border border-right-0 border-left-0">
+            <a href="elements.html" class="list-group-item list-group-item-action border-0 <%- (apptitle == 'Elements' ? 'active' :'') -%>">Elements</a>
+            <a href="sidebars.html" class="list-group-item list-group-item-action border-0 <%- (apptitle == 'Sidebars' ? 'active' :'') -%>">Sidebars</a>
+        </div>
+        <div class="bg-white p-3 border border-right-0 border-left-0 mt-3">
+            <h5 class="card-title mb-0">Layouts</h5>
+        </div>
+        <div class="list-group mt-3 bg-white border border-right-0 border-left-0">
+            <a href="clean.html" class="list-group-item list-group-item-action border-0 <%- (apptitle == 'Elements' ? 'active' :'') -%>">Clean</a>
+        </div>
+    </div>
+</div>

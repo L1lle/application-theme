@@ -1,0 +1,14 @@
+@import '~bootstrap/scss/forms';
+
+.form-control {
+    letter-spacing: $letter-spacing;
+}
+
+.form-control-required {
+    label:after {
+        content: '*';
+        color: theme-color("danger");
+        font-size: 0.85em;
+        vertical-align: top;
+    }
+}

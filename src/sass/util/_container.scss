@@ -1,0 +1,7 @@
+body {
+    letter-spacing: $letter-spacing;
+}
+
+.app-height {
+    height: calc(100vh - #{$navbar-height-normal});
+}
