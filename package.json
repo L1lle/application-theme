@@ -1,5 +1,5 @@
 {
-  "name": "app-theme",
+  "name": "application-theme",
   "version": "0.0.1",
   "description": "A modern app theme based on bootstrap4",
   "main": "dist/app-theme.js",
@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/L1lle/app-theme.git"
+    "url": "git+https://github.com/L1lle/application-theme.git"
   },
   "keywords": [
     "theme",
@@ -18,9 +18,9 @@
   "author": "Matthias Lill",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/L1lle/app-theme/issues"
+    "url": "https://github.com/L1lle/application-theme/issues"
   },
-  "homepage": "https://github.com/L1lle/app-theme#readme",
+  "homepage": "https://github.com/L1lle/application-theme#readme",
   "dependencies": {},
   "devDependencies": {
     "babel-loader": "^7.1.4",
@@ -29,7 +29,7 @@
     "css-loader": "^0.28.11",
     "html-loader": "^0.5.5",
     "html-webpack-plugin": "^3.2.0",
-    "jquery": "^3.2.1",
+    "jquery": "^3.3.1",
     "mini-css-extract-plugin": "^0.4.0",
     "node-sass": "^4.9.0",
     "popper.js": "^1.14.0",
