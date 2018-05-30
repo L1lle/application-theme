@@ -1,5 +1,5 @@
 {
-  "name": "application-theme",
+  "name": "bootstrap4-application-theme",
   "version": "0.0.1",
   "description": "A modern app theme based on bootstrap4",
   "main": "dist/app-theme.js",
