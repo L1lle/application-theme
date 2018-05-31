@@ -1,0 +1,29 @@
+.footer-container {
+    @extend .pt-3;
+    color: $gray-600;
+    border-top: 1px solid $gray-200;
+
+    margin-right: ($grid-gutter-width / 2);
+    margin-left: ($grid-gutter-width / 2);
+
+    .nav-link {
+        @extend .small;
+        color: $gray-600;
+        padding: $nav-link-padding-y ($nav-link-padding-x / 2);
+    }
+
+    .nav-item {
+
+        &:first-child {
+            .nav-link:not(.btn) {
+                padding-left: 0;
+            }
+        }
+
+        &:last-child {
+            .nav-link:not(.btn) {
+                padding-right: 0;
+            }
+        }
+    }
+}
