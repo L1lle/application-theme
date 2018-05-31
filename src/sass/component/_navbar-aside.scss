@@ -13,14 +13,14 @@
 .navbar-aside-left {
     left: 0;
 
-    box-shadow: 1px 0 5px rgba(0, 0, 0, 0.05);
+    box-shadow: 1px 0 4px rgba(0, 0, 0, 0.03);
 }
 
 .navbar-aside-right {
     right: 0;
     top: $navbar-height-normal;
 
-    box-shadow: -1px 0 5px rgba(0, 0, 0, 0.05);
+    box-shadow: -1px 0 4px rgba(0, 0, 0, 0.03);
 }
 
 .navbar-aside-body {}
