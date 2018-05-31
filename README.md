@@ -1,3 +1,12 @@
-# A lightweight application theme build on Bootstrap4
+# Bootstrap Simple Application Theme
 
-Based on Bootstrap4. This is work in progress. It's not yet recommended to use it in production.
+A lightweight application theme build on top of Bootstrap4. This is work in progress. It's not yet recommended to use it in production.
+
+
+
+## Getting started
+
+
+```shell
+$ npm install bootstrap4-application-theme
+```

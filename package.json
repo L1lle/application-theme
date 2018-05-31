@@ -1,7 +1,7 @@
 {
-  "name": "bootstrap4-application-theme",
-  "version": "0.0.1",
-  "description": "A modern app theme based on bootstrap4",
+  "name": "bootstrap-simple-application-theme",
+  "version": "4.1.0",
+  "description": "A lightweight application theme build on top of Bootstrap4",
   "main": "dist/app-theme.js",
   "scripts": {
     "build": "webpack"
