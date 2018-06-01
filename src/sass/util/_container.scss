@@ -6,7 +6,7 @@ html {
 body {
     letter-spacing: $letter-spacing;
     /* Margin bottom by footer height */
-    margin-bottom: $footer-height;
+    margin-bottom: $footer-height + $spacer;
 }
 
 footer {
@@ -18,4 +18,9 @@ footer {
 
 .app-height {
     height: calc(100vh - #{$navbar-height-normal});
+}
+
+.container-fluid {
+    padding-left: $grid-gutter-width;
+    padding-right: $grid-gutter-width;
 }
