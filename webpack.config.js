@@ -5,17 +5,15 @@
 // module.exports = require(`./conf/webpack.${npmEvent}.config.js`);
 // 
 
-const webpack = require('webpack');
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
-const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const CleanWebpackPlugin = require('clean-webpack-plugin');
 
-const config = {
+module.exports = {
     mode: "development",
     entry: [
-        './src/js/app.js',
-        './src/sass/app.scss'
+        './src/js/app.js'
+        // './src/sass/app.scss'
     ],
     output: {
         path: path.resolve(__dirname, 'dist'),
@@ -23,10 +21,10 @@ const config = {
         libraryTarget: 'umd'
     },
     module: {
-        rules: [{
+        rules: [
+            {
                 test: /\.s?[ac]ss$/,
                 use: [
-                    MiniCssExtractPlugin.loader,
                     {
                         loader: 'css-loader', // translates CSS into CommonJS modules
                         options: {
@@ -67,23 +65,19 @@ const config = {
                 }
             },
             {
-                test: /\.js$/,
-                exclude: /node_modules/,
-                use: [{
-                    loader: 'babel-loader', // transpile to ES5
+                test: /\.m?js$/,
+                exclude: /(node_modules|bower_components)/,
+                use: {
+                    loader: 'babel-loader',
                     options: {
-                        presets: ['es2015']
+                        presets: ['@babel/preset-env']
                     }
-                }]
+                }
             }
         ]
     },
     plugins: [
         new CleanWebpackPlugin(['dist']),
-        new MiniCssExtractPlugin({ // define where to save the file
-            filename: "app-theme.css",
-            chunkFilename: "[id].css"
-        }),
         new HtmlWebpackPlugin({
             filename: 'index.html',
             template: './src/demo/html/index.html'
@@ -101,6 +95,4 @@ const config = {
             template: './src/demo/html/clean.html'
         })
     ]
-};
-
-module.exports = config;
+}

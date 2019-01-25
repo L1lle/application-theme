@@ -1,10 +1,12 @@
 {
   "name": "bootstrap-simple-application-theme",
-  "version": "4.1.0",
+  "version": "4.2.0",
   "description": "A lightweight application theme build on top of Bootstrap4",
   "main": "dist/app-theme.js",
   "scripts": {
-    "build": "webpack"
+    "build": "npm run webpack && npm run scss",
+    "scss": "node-sass --importer node_modules/node-sass-package-importer/dist/cli.js src/sass/app.scss -o dist",
+    "webpack": "webpack"
   },
   "repository": {
     "type": "git",
@@ -21,23 +23,19 @@
     "url": "https://github.com/L1lle/application-theme/issues"
   },
   "homepage": "https://github.com/L1lle/application-theme#readme",
-  "dependencies": {},
   "devDependencies": {
-    "babel-loader": "^7.1.4",
-    "bootstrap": "4.1.1",
-    "clean-webpack-plugin": "^0.1.19",
-    "css-loader": "^0.28.11",
+    "@babel/core": "^7.2.2",
+    "@babel/preset-env": "^7.3.1",
+    "babel-loader": "^8.0.5",
+    "bootstrap": "4.2.1",
+    "clean-webpack-plugin": "^1.0.1",
     "html-loader": "^0.5.5",
     "html-webpack-plugin": "^3.2.0",
     "jquery": "^3.3.1",
-    "mini-css-extract-plugin": "^0.4.0",
     "node-sass": "^4.9.0",
+    "node-sass-package-importer": "^5.3.0",
     "popper.js": "^1.14.0",
-    "postcss-flexbugs-fixes": "^3.3.1",
-    "postcss-loader": "^2.1.4",
-    "sass-loader": "^7.0.1",
-    "style-loader": "^0.21.0",
-    "webpack": "^4.6.0",
-    "webpack-cli": "^2.1.2"
+    "webpack": "^4.29.0",
+    "webpack-cli": "^3.2.1"
   }
 }
