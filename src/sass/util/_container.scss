@@ -3,18 +3,18 @@ html {
     min-height: 100%;
 }
 
-body {
-    letter-spacing: $letter-spacing;
+body.footer-bottom {
     /* Margin bottom by footer height */
     margin-bottom: $footer-height + $spacer;
+    
+    footer {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        height: $footer-height;
+    }
 }
 
-footer {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    height: $footer-height;
-}
 
 .app-height {
     height: calc(100vh - #{$navbar-height-normal});
