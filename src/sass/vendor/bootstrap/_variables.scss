@@ -141,8 +141,8 @@ $sizes: map-merge((
 //
 // Settings for the `<body>` element.
 
-$body-bg:                   darken($white, 2%) !default;
-$body-color:                $gray-700 !default;
+$body-bg:                   #f8fafc !default; // ;darken($white, 2%)
+$body-color:                #343638 !default; // $gray-700
 
 // Links
 //
