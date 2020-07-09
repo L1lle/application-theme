@@ -12,3 +12,16 @@
         vertical-align: top;
     }
 }
+
+.form-group {
+    label {
+        @extend .small;
+        @extend .font-weight-bold;
+        @extend .text-muted;
+    }
+}
+
+.help-block {
+    @extend .small;
+    @extend .text-muted;
+}
