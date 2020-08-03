@@ -1,7 +1,11 @@
 $letter-spacing : .02em !default;
 
-$navbar-aside-left-width: 15% !default;
-$navbar-aside-right-width: 25% !default;
+$navbar-aside-left-width: 20% !default;
+$navbar-aside-left-max-width: 320px !default;
+$navbar-aside-left-second-width: 20% !default;
+$navbar-aside-left-second-max-width: 320px !default;
+$navbar-aside-right-width: 30% !default;
+$navbar-aside-right-max-width: 480px !default;
 $navbar-height-normal: 4.1rem !default;
 
 $footer-height: 4.5rem;
