@@ -14,6 +14,11 @@
     box-shadow: 1px 0 4px rgba(0, 0, 0, 0.03);
 }
 
+.navbar-aside-left-second {
+    left: $navbar-aside-left-width;
+    box-shadow: 1px 0 4px rgba(0, 0, 0, 0.03);
+}
+
 .navbar-aside-right {
     right: 0;
     box-shadow: -1px 0 4px rgba(0, 0, 0, 0.03);
@@ -51,6 +56,10 @@
         width: $navbar-aside-left-width;
     }
 
+    .navbar-aside-left-second {
+        width: $navbar-aside-left-second-width;
+    }
+
     .navbar-aside-right {
         width: $navbar-aside-right-width;
     }
@@ -59,9 +68,40 @@
         padding-left: $navbar-aside-left-width;
     }
 
+    .ml-second-aside {
+        padding-left: $navbar-aside-left-width + $navbar-aside-left-second-width;
+    }
+
     .mr-aside {
         padding-right: $navbar-aside-right-width;
     }
 }
 
-@include media-breakpoint-up(xl) {}
+@include media-breakpoint-up(xl) {
+
+    .navbar-aside-left {
+        width: $navbar-aside-left-max-width
+    }
+
+    .navbar-aside-left-second {
+        left: $navbar-aside-left-max-width;
+        width: $navbar-aside-left-second-max-width;
+    }
+
+    .navbar-aside-right {
+        width: $navbar-aside-right-max-width;
+    }
+
+    .ml-aside {
+        padding-left: $navbar-aside-left-max-width;
+    }
+
+    .ml-second-aside {
+        padding-left: $navbar-aside-left-max-width + $navbar-aside-left-second-max-width;
+    }
+
+    .mr-aside {
+        padding-right: $navbar-aside-right-max-width;
+    }
+
+}
