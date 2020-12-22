@@ -1,1 +1,8 @@
 @import '~bootstrap/scss/nav';
+
+@include media-breakpoint-up(md) {
+    .nav-item-divider {
+        border-left: 1px solid $navbar-light-color;
+        margin: 5px 0;
+    }
+}
