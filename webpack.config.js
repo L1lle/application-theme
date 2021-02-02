@@ -87,6 +87,10 @@ module.exports = {
             template: './src/demo/html/elements.html'
         }),
         new HtmlWebpackPlugin({
+            filename: 'navbar.html',
+            template: './src/demo/html/navbar.html'
+        }),
+        new HtmlWebpackPlugin({
             filename: 'sidebars.html',
             template: './src/demo/html/sidebars.html'
         }),
