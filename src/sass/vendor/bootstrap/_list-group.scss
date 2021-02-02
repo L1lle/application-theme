@@ -1,0 +1,31 @@
+@import '~bootstrap/scss/list-group';
+
+.list-group-title {
+    font-weight: bold;
+
+    // active list group title looks just like a normal title with a different color.
+    // no change in background color and so on.
+    &.active {
+        color: $list-group-active-bg;
+        background-color: $list-group-bg;
+        border: $list-group-border-width solid $list-group-border-color;
+    }
+}
+
+.list-group-divider {
+    @extend .list-group-item;
+    @extend .border-top;
+    padding: 0;
+    height: 0;
+}
+
+.list-group {
+    &.list-group-nested {
+        .list-group {
+            .list-group-item {
+                border-radius: 0;
+                padding-left: 1.5 * $list-group-item-padding-x;
+            }
+        }
+    }
+}

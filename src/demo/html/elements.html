@@ -106,6 +106,44 @@ ${require('./_head.html')} ${require('./_navbar.html')}
     </div>
 
     <div class="container-fluid mt-3">
+        <h2>List groups</h2>
+            
+
+        <h3>Titles</h3>
+
+        <ul class="list-group">
+            <li class="list-group-item list-group-title">List group title</li>
+            <li class="list-group-item">Cras justo odio</li>
+            <li class="list-group-item">Vestibulum at eros</li>
+        </ul>
+
+        <h3>Divider</h3>
+    
+        <ul class="list-group">
+            <li class="list-group-item list-group-title border-0">List group title</li>
+            <li class="list-group-item border-0">Cras justo odio</li>
+            <li class="list-group-divider"></li>
+            <li class="list-group-item border-0">Vestibulum at eros</li>
+        </ul>        
+
+        <h3>Nested Lists</h3>
+
+        <div class="list-group list-group-nested">
+            <a class="list-group-item list-group-title list-group-item-action">List group title</a>
+            <a class="list-group-item list-group-item-action">Cras justo odio</a>
+            <a class="list-group-item list-group-title list-group-item-action active">Vestibulum at eros</a>
+            
+            <div class="list-group">
+                <a class="list-group-item list-group-item-action">Cras justo odio</a>
+                <a class="list-group-item list-group-item-action active">Vestibulum at eros</a>
+            </div>
+
+            <a class="list-group-item list-group-item-action">Cras justo odio</a>
+        </div>
+
+    </div>
+
+    <div class="container-fluid mt-3">
         <h2>Modal</h2>
 
         <h3>Classic Bootstrap Modal</h3>
