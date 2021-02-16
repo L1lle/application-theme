@@ -10,19 +10,15 @@
 }
 
 .navbar-aside-left {
-    left: 0;
     box-shadow: 1px 0 4px rgba(0, 0, 0, 0.03);
 }
 
 .navbar-aside-left-second {
-    left: $navbar-aside-left-width;
     box-shadow: 1px 0 4px rgba(0, 0, 0, 0.03);
 }
 
 .navbar-aside-right {
-    right: 0;
     box-shadow: -1px 0 4px rgba(0, 0, 0, 0.03);
-    top: $navbar-height-normal; /** replace with body margins */
 }
 
 .navbar-aside-body {}
@@ -42,7 +38,6 @@
     .navbar-aside {}
 
     .navbar-aside {
-        position: fixed;
         overflow-y: auto;
         scrollbar-width: none;
         -ms-overflow-style: none;
@@ -53,55 +48,31 @@
     }
 
     .navbar-aside-left {
-        width: $navbar-aside-left-width;
+        flex: 0 0 $navbar-aside-left-width;
     }
 
     .navbar-aside-left-second {
-        width: $navbar-aside-left-second-width;
+        flex: 0 0 $navbar-aside-left-second-width;
     }
 
     .navbar-aside-right {
-        width: $navbar-aside-right-width;
+        flex: 0 0 $navbar-aside-right-width;
     }
 
-    .ml-aside {
-        padding-left: $navbar-aside-left-width;
-    }
-
-    .ml-second-aside {
-        padding-left: $navbar-aside-left-width + $navbar-aside-left-second-width;
-    }
-
-    .mr-aside {
-        padding-right: $navbar-aside-right-width;
-    }
 }
 
 @include media-breakpoint-up(xl) {
 
     .navbar-aside-left {
-        width: $navbar-aside-left-max-width
+        flex: 0 0 $navbar-aside-left-max-width;
     }
 
     .navbar-aside-left-second {
-        left: $navbar-aside-left-max-width;
-        width: $navbar-aside-left-second-max-width;
+        flex: 0 0 $navbar-aside-left-second-max-width;
     }
 
     .navbar-aside-right {
-        width: $navbar-aside-right-max-width;
-    }
-
-    .ml-aside {
-        padding-left: $navbar-aside-left-max-width;
-    }
-
-    .ml-second-aside {
-        padding-left: $navbar-aside-left-max-width + $navbar-aside-left-second-max-width;
-    }
-
-    .mr-aside {
-        padding-right: $navbar-aside-right-max-width;
+        flex: 0 0 $navbar-aside-right-max-width;
     }
 
 }

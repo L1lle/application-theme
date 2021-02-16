@@ -5,12 +5,12 @@ html {
 
 body.footer-bottom {
     /* Margin bottom by footer height */
-    margin-bottom: $footer-height + $spacer;
+    // margin-bottom: $footer-height + $spacer;
     
     footer {
         position: absolute;
         bottom: 0;
-        width: 100%;
+        // width: 100%;
         height: $footer-height;
     }
 }
@@ -23,4 +23,57 @@ body.footer-bottom {
 .container-fluid {
     padding-left: $grid-gutter-width;
     padding-right: $grid-gutter-width;
+}
+
+.app-container {
+    @extend .app-height;
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    flex-wrap: nowrap;
+}
+
+.app-container-content {
+    width: 100%;
+    overflow: auto;
+}
+
+
+@include media-breakpoint-up(md) {
+
+    .app-container {
+
+        .navbar-aside-left {
+            flex: 0 0 $navbar-aside-left-width;
+        }
+
+        .navbar-aside-left-second {
+            flex: 0 0 $navbar-aside-left-second-width;
+        }
+
+        .navbar-aside-right {
+            flex: 0 0 $navbar-aside-right-width;
+        }
+
+    }
+
+}
+
+@include media-breakpoint-up(xl) {
+
+    .app-container { 
+
+        .navbar-aside-left {
+            flex: 0 0 $navbar-aside-left-max-width;
+        }
+
+        .navbar-aside-left-second {
+            flex: 0 0 $navbar-aside-left-second-max-width;
+        }
+
+        .navbar-aside-right {
+            flex: 0 0 $navbar-aside-right-max-width;
+        }
+    }
+
 }
