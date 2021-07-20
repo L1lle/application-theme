@@ -31,25 +31,31 @@
     }
 }
 
-
 @include media-breakpoint-up(md) {
 }
 
 @include media-breakpoint-up(xl) {
+}
 
-    .app-container { 
+@media print {
 
-        .navbar-aside-left {
-            flex: 0 0 $navbar-aside-left-max-width;
-        }
-
-        .navbar-aside-left-second {
-            flex: 0 0 $navbar-aside-left-second-max-width;
-        }
-
-        .navbar-aside-right {
-            flex: 0 0 $navbar-aside-right-max-width;
-        }
+    .app-container,
+    .app-height {
+        height: inherit;
     }
 
+    .app-container-content {
+        width: inherit;
+        overflow: inherit;
+    }
+
+    .container-fluid,
+    .container {
+        padding: 0;
+    }
+
+    // https://github.com/twbs/bootstrap/issues/14868
+    .container {
+        width: auto;
+    }
 }
