@@ -1,5 +1,6 @@
 .footer-container {
-    @extend .pt-3;
+    @extend .py-3;
+    @extend .mt-3;
     color: $gray-600;
     border-top: 1px solid $gray-200;
 
