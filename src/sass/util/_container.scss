@@ -33,23 +33,6 @@
 
 
 @include media-breakpoint-up(md) {
-
-    .app-container {
-
-        .navbar-aside-left {
-            flex: 0 0 $navbar-aside-left-width;
-        }
-
-        .navbar-aside-left-second {
-            flex: 0 0 $navbar-aside-left-second-width;
-        }
-
-        .navbar-aside-right {
-            flex: 0 0 $navbar-aside-right-width;
-        }
-
-    }
-
 }
 
 @include media-breakpoint-up(xl) {

@@ -13,17 +13,10 @@
     box-shadow: 1px 0 4px rgba(0, 0, 0, 0.03);
 }
 
-.navbar-aside-left-second {
-    box-shadow: 1px 0 4px rgba(0, 0, 0, 0.03);
-}
-
 .navbar-aside-right {
     box-shadow: -1px 0 4px rgba(0, 0, 0, 0.03);
 }
 
-.navbar-aside-body {}
-
-.navbar-aside-left-container {}
 
 @include media-breakpoint-down(sm) {
     .navbar-aside {
@@ -35,7 +28,6 @@
 }
 
 @include media-breakpoint-up(md) {
-    .navbar-aside {}
 
     .navbar-aside {
         overflow-y: auto;
@@ -47,32 +39,53 @@
         }
     }
 
-    .navbar-aside-left {
-        flex: 0 0 $navbar-aside-left-width;
+    .navbar-aside-xs {
+        flex: 0 0 $navbar-aside-xs-width;
     }
 
-    .navbar-aside-left-second {
-        flex: 0 0 $navbar-aside-left-second-width;
+    .navbar-aside-s {
+        flex: 0 0 $navbar-aside-s-width;
     }
 
-    .navbar-aside-right {
-        flex: 0 0 $navbar-aside-right-width;
+    .navbar-aside-m {
+        flex: 0 0 $navbar-aside-m-width;
+    }
+
+    .navbar-aside-l {
+        flex: 0 0 $navbar-aside-l-width;
+    }
+
+    .navbar-aside-xl {
+        flex: 0 0 $navbar-aside-xl-width;
     }
 
 }
 
 @include media-breakpoint-up(xl) {
-
-    .navbar-aside-left {
-        flex: 0 0 $navbar-aside-left-max-width;
+    
+    .navbar-aside-xs {
+        flex: 0 0 (map-get($grid-breakpoints, "xl")  * ($navbar-aside-xs-width / 100%));
     }
 
-    .navbar-aside-left-second {
-        flex: 0 0 $navbar-aside-left-second-max-width;
+    .navbar-aside-s {
+        flex: 0 0 (map-get($grid-breakpoints, "xl")  * ($navbar-aside-s-width / 100%));
     }
 
-    .navbar-aside-right {
-        flex: 0 0 $navbar-aside-right-max-width;
+    .navbar-aside-m {
+        flex: 0 0 (map-get($grid-breakpoints, "xl")  * ($navbar-aside-m-width / 100%));
     }
 
+    .navbar-aside-l {
+        flex: 0 0 (map-get($grid-breakpoints, "xl")  * ($navbar-aside-l-width / 100%));
+    }
+
+    .navbar-aside-xl {
+        flex: 0 0 (map-get($grid-breakpoints, "xl")  * ($navbar-aside-xl-width / 100%));
+    }
+}
+
+@media print {
+    .navbar-aside {
+        display: none;
+    }
 }
