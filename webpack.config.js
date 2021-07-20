@@ -95,6 +95,10 @@ module.exports = {
             template: './src/demo/html/sidebars.html'
         }),
         new HtmlWebpackPlugin({
+            filename: 'default.html',
+            template: './src/demo/html/default.html'
+        }),
+        new HtmlWebpackPlugin({
             filename: 'clean.html',
             template: './src/demo/html/clean.html'
         })
