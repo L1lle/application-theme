@@ -14,6 +14,22 @@ ${require('./_head.html')} ${require('./_navbar.html')}
 
             <p>Wrap content in <code>.app-container-content</code> with a <code>.app-container-content-wrap</code> div. Add <code>footer</code> element.</p>
 
+            <h2>Disable responsive</h2>
+
+            <p>Most complex applications aren't made for mobile devices. Or not yet optimized. So is this theme.</p>
+
+            <p>Adding a class <code>no-responsive</code> to the body, disables the responsive breakpoints.</p>
+
+            <p>Even better support, but not by default. Changing also the breakpoints by adding this code to the app.scss:</p>
+
+            <code><pre>// disable responsivness
+$grid-breakpoints: (
+  xs: 0,
+  sm: 1px,
+  md: 2px,
+  lg: 3px,
+  xl: 1600px
+) !default;</pre></code>
 
         </div>
         

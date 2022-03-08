@@ -1,4 +1,10 @@
-
+/**
+ * disable responsivness. The main application layout is not yet optimized for
+ * mobile devices.
+ */
+body.no-responsive {
+    min-width: 1000px; 
+}
 
 .app-height {
     height: calc(100vh - #{$navbar-height-normal});
