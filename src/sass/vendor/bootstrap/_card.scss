@@ -18,7 +18,7 @@ a.card {
 }
 
 .card {
-    box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.03);
+     @extend .shadow-sm;
 }
 
 // number of cards per line for each breakpoint

@@ -1,0 +1,5 @@
+@each $grayColorName,$grayColor in $grays {
+    .bg-gray-#{$grayColorName} {
+        background-color: $grayColor !important;
+    }
+}

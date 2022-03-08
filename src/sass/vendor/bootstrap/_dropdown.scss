@@ -2,6 +2,10 @@
 
 .dropdown-menu {
     // border-radius: 0;
+    
+    // prevent long dropdowns from leaving the screen
+    max-height: 80vh;
+    overflow-y: auto;
 }
 
 .dropdown-menu-replace {
