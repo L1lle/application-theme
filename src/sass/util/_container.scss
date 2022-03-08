@@ -4,6 +4,10 @@
     height: calc(100vh - #{$navbar-height-normal});
 }
 
+.app-height-topbar {
+    height: calc(100vh - #{$navbar-height-normal} - #{$navbar-top-height-normal});
+}
+
 .container-fluid {
     padding-left: $grid-gutter-width;
     padding-right: $grid-gutter-width;

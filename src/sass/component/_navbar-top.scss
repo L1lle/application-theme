@@ -1,0 +1,19 @@
+.navbar-top {
+    @extend .shadow-sm;
+    z-index: 2;
+    height: $navbar-top-height-normal;
+    background-color: white;
+    padding-top: 1rem;
+}
+
+.app-height-topbar .navbar-aside {
+    z-index: 1;
+}
+
+@media print {
+
+    .navbar-top {
+        box-shadow: none !important;
+        padding: 0.5rem;
+    }
+}
