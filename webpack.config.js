@@ -7,12 +7,13 @@
 
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 
 module.exports = {
     mode: "development",
     entry: [
-        './src/js/app.js'
+        './src/app.js',
         // './src/sass/app.scss'
     ],
     output: {
@@ -23,46 +24,16 @@ module.exports = {
     module: {
         rules: [
             {
-                test: /\.s?[ac]ss$/,
+                test: /\.s[ac]ss$/i,
                 use: [
-                    {
-                        loader: 'css-loader', // translates CSS into CommonJS modules
-                        options: {
-                            sourceMap: true
-                        }
-                    },
-                    {
-                        loader: 'postcss-loader', // Run post css actions
-                        options: {
-                            sourceMap: true,
-                            plugins: function() { // post css plugins, can be exported to postcss.config.js
-                                return [
-                                    require('postcss-flexbugs-fixes'),
-                                    require('autoprefixer')
-                                ];
-                            }
-                        }
-                    },
-                    {
-                        loader: 'sass-loader', // compiles SASS to CSS
-                        options: {
-                            sourceMap: true
-                        }
-                    }
+                    MiniCssExtractPlugin.loader,
+                    "css-loader",
+                    "sass-loader",
                 ]
             },
             {
                 test: /\.(png|jpg|gif|svg)$/,
                 use: 'url-loader'
-            },
-            {
-                test: /.html$/,
-                use: {
-                    loader: 'html-loader',
-                    options: {
-                        interpolate: true
-                    }
-                }
             },
             {
                 test: /\.m?js$/,
@@ -74,10 +45,13 @@ module.exports = {
                     }
                 }
             }
-        ]
+        ],
     },
     plugins: [
         new CleanWebpackPlugin(),
+        new MiniCssExtractPlugin({
+          filename: "[name].css",
+        }),
         new HtmlWebpackPlugin({
             filename: 'index.html',
             template: './src/demo/html/index.html'

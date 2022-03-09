@@ -1,4 +1,6 @@
-${require('./_head.html')} ${require('./_navbar.html')}
+<%= require('html-loader!./_head.html').default %>
+<%= require('html-loader!./_navbar.html').default %>
+
 <div class="app-container-content">
     <div class="app-container-content-wrap">
         <div class="container-fluid bg-white border border-top-0 border-left-0 pt-3">
@@ -213,8 +215,8 @@ ${require('./_head.html')} ${require('./_navbar.html')}
 
         </div>
     </div>
-    ${require('./_footer.html')}
+    <%= require('html-loader!./_footer.html').default %>
     
 </div>
 
-${require('./_foot.html')}
+<%= require('html-loader!./_foot.html').default %>

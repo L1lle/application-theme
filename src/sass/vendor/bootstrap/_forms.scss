@@ -14,10 +14,15 @@
 }
 
 .form-group {
+    
+    margin-bottom: 1.5rem;
+
     label {
         @extend .small;
-        @extend .font-weight-bold;
+        // @extend .font-weight-bold;
         @extend .text-muted;
+
+        font-weight: $font-weight-bold;
     }
 }
 

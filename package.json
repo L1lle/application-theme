@@ -1,7 +1,7 @@
 {
   "name": "bootstrap-simple-application-theme",
-  "version": "4.6.0",
-  "description": "A lightweight application theme build on top of Bootstrap4",
+  "version": "5.1.0",
+  "description": "A lightweight application theme build on top of Bootstrap5",
   "main": "dist/app-theme.js",
   "scripts": {
     "build": "npm run webpack && npm run scss",
@@ -15,7 +15,7 @@
   "keywords": [
     "theme",
     "bootstrap",
-    "bootstrap4"
+    "bootstrap5"
   ],
   "author": "Matthias Lill",
   "license": "MIT",
@@ -24,18 +24,22 @@
   },
   "homepage": "https://github.com/L1lle/application-theme#readme",
   "devDependencies": {
-    "@babel/core": "^7.12",
-    "@babel/preset-env": "^7.12",
-    "babel-loader": "^8.2.2",
-    "bootstrap": "^4.6",
-    "clean-webpack-plugin": "^3.0.0",
-    "html-loader": "^0.5.5",
-    "html-webpack-plugin": "^3.2.0",
-    "jquery": "^3.5.1",
-    "node-sass": "^7.0.0",
+    "@babel/core": "^7.17",
+    "@babel/preset-env": "^7.16",
+    "@popperjs/core": "^2.11.0",
+    "babel-loader": "^8.2.3",
+    "bootstrap": "^5.1",
+    "clean-webpack-plugin": "^4.0.0",
+    "css-loader": "^6.7.1",
+    "html-loader": "^3.1",
+    "html-webpack-plugin": "^5.5",
+    "jquery": "^3.6",
+    "mini-css-extract-plugin": "^2.6.0",
+    "node-sass": "^7.0",
     "node-sass-package-importer": "^5.3.2",
-    "popper.js": "^1.16.0",
-    "webpack": "^4.43.0",
-    "webpack-cli": "^3.3.11"
+    "sass": "^1.49.9",
+    "sass-loader": "^12.6.0",
+    "webpack": "^5.70.0",
+    "webpack-cli": "^4.9.2"
   }
 }

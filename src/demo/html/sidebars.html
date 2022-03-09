@@ -1,4 +1,6 @@
-${require('./_head.html')} ${require('./_navbar.html')}
+<%= require('html-loader!./_head.html').default %>
+<%= require('html-loader!./_navbar.html').default %>
+
 <div class="navbar-aside navbar-aside-left navbar-aside-m bg-dark border border-right-0 border-top-0 border-bottom-0">
     <div class="navbar-aside-body">
         <div class="bg-light p-3">
@@ -58,7 +60,7 @@ ${require('./_head.html')} ${require('./_navbar.html')}
 
             </div>
 
-            ${require('./_footer.html')}
+            <%= require('html-loader!./_footer.html').default %>
 
         </div>
 
@@ -83,4 +85,4 @@ ${require('./_head.html')} ${require('./_navbar.html')}
     Navbar Aside right
 </div>
 
-${require('./_foot.html')}
+<%= require('html-loader!./_foot.html').default %>

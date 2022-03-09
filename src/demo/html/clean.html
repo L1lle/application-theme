@@ -1,4 +1,4 @@
-${require('./_head.html')}
+<%= require('html-loader!./_head.html').default %>
 
 <div class="app-container"> <!-- manually open this div, because there is no navbar template loaded -->
     <div class="navbar-aside navbar-aside-left navbar-aside-m bg-light border border-top-0 border-left-0 border-bottom-0 vh-100 p-3">
@@ -21,4 +21,4 @@ ${require('./_head.html')}
         </div>
     </div>
 
-${require('./_foot.html')}
+<%= require('html-loader!./_foot.html').default %>
